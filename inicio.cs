@@ -17,19 +17,17 @@ namespace programa{
            "2-Fazer orçamento para clientes|" +
            "3 - Fazer fechamento no final do dia" );
 
-           Console.WriteLine("Descreva as atividades do seu dia");
-           String ativ = Console.ReadLine();
+         Console.WriteLine("===========Transações===========");
+         Console.WriteLine("Digite 1");
+         int num = int.Parse(Console.ReadLine());
 
-           Console.WriteLine("Deseja Salvar ? 1-Sim | 2-Não");
-           int Salvar =int.Parse(Console.ReadLine());
+         if(num == 1){
 
-           if(Salvar == 1){
-            Console.WriteLine("Salvo com sucesso!");
-           }
-           else{
-            Console.WriteLine("Tente Novamente!");
-           }
+            Transacao T = new Transacao();
+            T.trabalhar();
+            Console.ReadKey();
 
-        }
+             }            
+          }
     }
 }
